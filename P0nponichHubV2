@@ -2788,7 +2788,7 @@ local function C_b1()
 local script = G2L["b1"];
 	local button = script.Parent
 	local Lighting = game:GetService("Lighting")
-	local data = {"Lf":"http://www.roblox.com/asset/?id=5346761102","Dn":"http://www.roblox.com/asset/?id=5346760689","Up":"http://www.roblox.com/asset/?id=5346761509","Bk":"http://www.roblox.com/asset/?id=5346760450","Rt":"http://www.roblox.com/asset/?id=5346761335","Ft":"http://www.roblox.com/asset/?id=5346760919"}
+	
 	button.MouseButton1Click:Connect(function()
 	    for _, child in pairs(Lighting:GetChildren()) do
 	        if child:IsA("Sky") then child:Destroy() end
@@ -2796,12 +2796,12 @@ local script = G2L["b1"];
 	    
 	    local newSky = Instance.new("Sky")
 	    newSky.Name = "CustomSky"
-	    newSky.SkyboxBk = data.Bk
-	    newSky.SkyboxDn = data.Dn
-	    newSky.SkyboxFt = data.Ft
-	    newSky.SkyboxLf = data.Lf
-	    newSky.SkyboxRt = data.Rt
-	    newSky.SkyboxUp = data.Up
+	    newSky.SkyboxBk = "http://www.roblox.com/asset/?id=5346760450"
+	    newSky.SkyboxDn = "http://www.roblox.com/asset/?id=5346760689"
+	    newSky.SkyboxFt = "http://www.roblox.com/asset/?id=5346760919"
+	    newSky.SkyboxLf = "http://www.roblox.com/asset/?id=5346761102"
+	    newSky.SkyboxRt = "http://www.roblox.com/asset/?id=5346761335"
+	    newSky.SkyboxUp = "http://www.roblox.com/asset/?id=5346761509"
 	    newSky.Parent = Lighting
 	end)
 	
@@ -2812,7 +2812,7 @@ local function C_b7()
 local script = G2L["b7"];
 	local button = script.Parent
 	local Lighting = game:GetService("Lighting")
-	local data = {"Lf":"rbxassetid://109838453114563","Dn":"rbxassetid://78646480540009","Up":"rbxassetid://126944775797063","Bk":"rbxassetid://108929045660200","Rt":"rbxassetid://94190734796082","Ft":"rbxassetid://90546017435179"}
+	
 	button.MouseButton1Click:Connect(function()
 	    for _, child in pairs(Lighting:GetChildren()) do
 	        if child:IsA("Sky") then child:Destroy() end
@@ -2820,12 +2820,12 @@ local script = G2L["b7"];
 	    
 	    local newSky = Instance.new("Sky")
 	    newSky.Name = "CustomSky"
-	    newSky.SkyboxBk = data.Bk
-	    newSky.SkyboxDn = data.Dn
-	    newSky.SkyboxFt = data.Ft
-	    newSky.SkyboxLf = data.Lf
-	    newSky.SkyboxRt = data.Rt
-	    newSky.SkyboxUp = data.Up
+	    newSky.SkyboxBk = "rbxassetid://108929045660200"
+	    newSky.SkyboxDn = "rbxassetid://78646480540009"
+	    newSky.SkyboxFt = "rbxassetid://90546017435179"
+	    newSky.SkyboxLf = "rbxassetid://109838453114563"
+	    newSky.SkyboxRt = "rbxassetid://94190734796082"
+	    newSky.SkyboxUp = "rbxassetid://126944775797063"
 	    newSky.Parent = Lighting
 	end)
 	
@@ -2836,7 +2836,7 @@ local function C_bd()
 local script = G2L["bd"];
 	local button = script.Parent
 	local Lighting = game:GetService("Lighting")
-	local data = {"Lf":"rbxassetid://16573633258","Dn":"rbxassetid://16573631950","Up":"rbxassetid://16573634370","Bk":"rbxassetid://16573631102","Rt":"rbxassetid://16573633908","Ft":"rbxassetid://16573632795"}
+	
 	button.MouseButton1Click:Connect(function()
 	    for _, child in pairs(Lighting:GetChildren()) do
 	        if child:IsA("Sky") then child:Destroy() end
@@ -2844,12 +2844,12 @@ local script = G2L["bd"];
 	    
 	    local newSky = Instance.new("Sky")
 	    newSky.Name = "CustomSky"
-	    newSky.SkyboxBk = data.Bk
-	    newSky.SkyboxDn = data.Dn
-	    newSky.SkyboxFt = data.Ft
-	    newSky.SkyboxLf = data.Lf
-	    newSky.SkyboxRt = data.Rt
-	    newSky.SkyboxUp = data.Up
+	    newSky.SkyboxBk = "rbxassetid://16573631102"
+	    newSky.SkyboxDn = "rbxassetid://16573631950"
+	    newSky.SkyboxFt = "rbxassetid://16573632795"
+	    newSky.SkyboxLf = "rbxassetid://16573633258"
+	    newSky.SkyboxRt = "rbxassetid://16573633908"
+	    newSky.SkyboxUp = "rbxassetid://16573634370"
 	    newSky.Parent = Lighting
 	end)
 	
@@ -2860,7 +2860,7 @@ local function C_c3()
 local script = G2L["c3"];
 	local button = script.Parent
 	local Lighting = game:GetService("Lighting")
-	local data = {"Lf":"http://www.roblox.com/asset/?id=16553664042","Dn":"http://www.roblox.com/asset/?id=16553660713","Up":"http://www.roblox.com/asset/?id=16553667750","Bk":"http://www.roblox.com/asset/?id=16553658937","Rt":"http://www.roblox.com/asset/?id=16553665766","Ft":"http://www.roblox.com/asset/?id=16553662144"}
+	
 	button.MouseButton1Click:Connect(function()
 	    for _, child in pairs(Lighting:GetChildren()) do
 	        if child:IsA("Sky") then child:Destroy() end
@@ -2868,12 +2868,12 @@ local script = G2L["c3"];
 	    
 	    local newSky = Instance.new("Sky")
 	    newSky.Name = "CustomSky"
-	    newSky.SkyboxBk = data.Bk
-	    newSky.SkyboxDn = data.Dn
-	    newSky.SkyboxFt = data.Ft
-	    newSky.SkyboxLf = data.Lf
-	    newSky.SkyboxRt = data.Rt
-	    newSky.SkyboxUp = data.Up
+	    newSky.SkyboxBk = "http://www.roblox.com/asset/?id=16553658937"
+	    newSky.SkyboxDn = "http://www.roblox.com/asset/?id=16553660713"
+	    newSky.SkyboxFt = "http://www.roblox.com/asset/?id=16553662144"
+	    newSky.SkyboxLf = "http://www.roblox.com/asset/?id=16553664042"
+	    newSky.SkyboxRt = "http://www.roblox.com/asset/?id=16553665766"
+	    newSky.SkyboxUp = "http://www.roblox.com/asset/?id=16553667750"
 	    newSky.Parent = Lighting
 	end)
 	
@@ -2884,7 +2884,7 @@ local function C_c9()
 local script = G2L["c9"];
 	local button = script.Parent
 	local Lighting = game:GetService("Lighting")
-	local data = {"Lf":"rbxassetid://15962101128","Dn":"rbxassetid://15970246218","Up":"rbxassetid://15962901054","Bk":"rbxassetid://15962101128","Rt":"rbxassetid://15962101128","Ft":"rbxassetid://15962101128"}
+	
 	button.MouseButton1Click:Connect(function()
 	    for _, child in pairs(Lighting:GetChildren()) do
 	        if child:IsA("Sky") then child:Destroy() end
@@ -2892,12 +2892,12 @@ local script = G2L["c9"];
 	    
 	    local newSky = Instance.new("Sky")
 	    newSky.Name = "CustomSky"
-	    newSky.SkyboxBk = data.Bk
-	    newSky.SkyboxDn = data.Dn
-	    newSky.SkyboxFt = data.Ft
-	    newSky.SkyboxLf = data.Lf
-	    newSky.SkyboxRt = data.Rt
-	    newSky.SkyboxUp = data.Up
+	    newSky.SkyboxBk = "rbxassetid://15962101128"
+	    newSky.SkyboxDn = "rbxassetid://15970246218"
+	    newSky.SkyboxFt = "rbxassetid://15962101128"
+	    newSky.SkyboxLf = "rbxassetid://15962101128"
+	    newSky.SkyboxRt = "rbxassetid://15962101128"
+	    newSky.SkyboxUp = "rbxassetid://15962901054"
 	    newSky.Parent = Lighting
 	end)
 	
@@ -2908,7 +2908,7 @@ local function C_cf()
 local script = G2L["cf"];
 	local button = script.Parent
 	local Lighting = game:GetService("Lighting")
-	local data = {"Lf":"http://www.roblox.com/asset/?id=155441777","Dn":"http://www.roblox.com/asset/?id=155441802","Up":"http://www.roblox.com/asset/?id=155441905","Bk":"http://www.roblox.com/asset/?id=155441936","Rt":"http://www.roblox.com/asset/?id=155441874","Ft":"http://www.roblox.com/asset/?id=155441818"}
+	
 	button.MouseButton1Click:Connect(function()
 	    for _, child in pairs(Lighting:GetChildren()) do
 	        if child:IsA("Sky") then child:Destroy() end
@@ -2916,12 +2916,12 @@ local script = G2L["cf"];
 	    
 	    local newSky = Instance.new("Sky")
 	    newSky.Name = "CustomSky"
-	    newSky.SkyboxBk = data.Bk
-	    newSky.SkyboxDn = data.Dn
-	    newSky.SkyboxFt = data.Ft
-	    newSky.SkyboxLf = data.Lf
-	    newSky.SkyboxRt = data.Rt
-	    newSky.SkyboxUp = data.Up
+	    newSky.SkyboxBk = "http://www.roblox.com/asset/?id=155441936"
+	    newSky.SkyboxDn = "http://www.roblox.com/asset/?id=155441802"
+	    newSky.SkyboxFt = "http://www.roblox.com/asset/?id=155441818"
+	    newSky.SkyboxLf = "http://www.roblox.com/asset/?id=155441777"
+	    newSky.SkyboxRt = "http://www.roblox.com/asset/?id=155441874"
+	    newSky.SkyboxUp = "http://www.roblox.com/asset/?id=155441905"
 	    newSky.Parent = Lighting
 	end)
 	
@@ -2932,7 +2932,7 @@ local function C_d5()
 local script = G2L["d5"];
 	local button = script.Parent
 	local Lighting = game:GetService("Lighting")
-	local data = {"Lf":"http://www.roblox.com/asset/?id=458016655","Dn":"http://www.roblox.com/asset/?id=458016826","Up":"http://www.roblox.com/asset/?id=458016792","Bk":"http://www.roblox.com/asset/?id=458016711","Rt":"http://www.roblox.com/asset/?id=458016782","Ft":"http://www.roblox.com/asset/?id=458016532"}
+	
 	button.MouseButton1Click:Connect(function()
 	    for _, child in pairs(Lighting:GetChildren()) do
 	        if child:IsA("Sky") then child:Destroy() end
@@ -2940,12 +2940,12 @@ local script = G2L["d5"];
 	    
 	    local newSky = Instance.new("Sky")
 	    newSky.Name = "CustomSky"
-	    newSky.SkyboxBk = data.Bk
-	    newSky.SkyboxDn = data.Dn
-	    newSky.SkyboxFt = data.Ft
-	    newSky.SkyboxLf = data.Lf
-	    newSky.SkyboxRt = data.Rt
-	    newSky.SkyboxUp = data.Up
+	    newSky.SkyboxBk = "http://www.roblox.com/asset/?id=458016711"
+	    newSky.SkyboxDn = "http://www.roblox.com/asset/?id=458016826"
+	    newSky.SkyboxFt = "http://www.roblox.com/asset/?id=458016532"
+	    newSky.SkyboxLf = "http://www.roblox.com/asset/?id=458016655"
+	    newSky.SkyboxRt = "http://www.roblox.com/asset/?id=458016782"
+	    newSky.SkyboxUp = "http://www.roblox.com/asset/?id=458016792"
 	    newSky.Parent = Lighting
 	end)
 	
