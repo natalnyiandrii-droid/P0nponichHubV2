@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 417 | Scripts: 61 | Modules: 0 | Tags: 0
+-- Instances: 432 | Scripts: 65 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -871,7 +871,7 @@ G2L["5b"] = Instance.new("ScrollingFrame", G2L["5a"]);
 G2L["5b"]["Active"] = true;
 G2L["5b"]["BorderSizePixel"] = 0;
 G2L["5b"]["CanvasSize"] = UDim2.new(0, 0, 4, 0);
-G2L["5b"]["CanvasPosition"] = Vector2.new(0, 700);
+G2L["5b"]["CanvasPosition"] = Vector2.new(0, 600);
 G2L["5b"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
 G2L["5b"]["Size"] = UDim2.new(0, 674, 0, 385);
 G2L["5b"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
@@ -3492,237 +3492,359 @@ G2L["188"]["Text"] = [[Ice Wings]];
 G2L["188"]["Position"] = UDim2.new(0, 0, 0.66266, 0);
 
 
--- StarterGui.ScreenGui.Main.Waypoints
-G2L["189"] = Instance.new("Frame", G2L["2"]);
-G2L["189"]["Visible"] = false;
+-- StarterGui.ScreenGui.Main.Player.ScrollingFrame.Cosmetics.ImageButton
+G2L["189"] = Instance.new("ImageButton", G2L["15b"]);
 G2L["189"]["BorderSizePixel"] = 0;
-G2L["189"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
-G2L["189"]["Size"] = UDim2.new(0, 664, 0, 384);
-G2L["189"]["Position"] = UDim2.new(0.20096, 0, 0.08571, 0);
+G2L["189"]["BackgroundColor3"] = Color3.fromRGB(15, 17, 19);
+G2L["189"]["Image"] = [[rbxthumb://type=Asset&id=1082802&w=150&h=150]];
+G2L["189"]["Size"] = UDim2.new(0, 68, 0, 68);
 G2L["189"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["189"]["Name"] = [[Waypoints]];
+G2L["189"]["Position"] = UDim2.new(0.6252, 0, 0.0818, 0);
 
 
--- StarterGui.ScreenGui.Main.Waypoints.LocalScript
+-- StarterGui.ScreenGui.Main.Player.ScrollingFrame.Cosmetics.ImageButton.LocalScript
 G2L["18a"] = Instance.new("LocalScript", G2L["189"]);
 
 
 
+-- StarterGui.ScreenGui.Main.Player.ScrollingFrame.Cosmetics.ImageButton.UICorner
+G2L["18b"] = Instance.new("UICorner", G2L["189"]);
+G2L["18b"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.ScreenGui.Main.Player.ScrollingFrame.Cosmetics.ImageButton.UIStroke
+G2L["18c"] = Instance.new("UIStroke", G2L["189"]);
+G2L["18c"]["Transparency"] = 0.5;
+G2L["18c"]["Color"] = Color3.fromRGB(98, 98, 98);
+G2L["18c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Main.Player.ScrollingFrame.Cosmetics.ImageButton.TextLabel
+G2L["18d"] = Instance.new("TextLabel", G2L["189"]);
+G2L["18d"]["TextWrapped"] = true;
+G2L["18d"]["BorderSizePixel"] = 0;
+G2L["18d"]["TextSize"] = 14;
+G2L["18d"]["TextScaled"] = true;
+G2L["18d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18d"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["18d"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18d"]["BackgroundTransparency"] = 1;
+G2L["18d"]["Size"] = UDim2.new(0, 67, 0, 22);
+G2L["18d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18d"]["Text"] = [[Cone Hat]];
+G2L["18d"]["Position"] = UDim2.new(0, 0, 0.66266, 0);
+
+
+-- StarterGui.ScreenGui.Main.Player.ScrollingFrame.Cosmetics.ImageButton
+G2L["18e"] = Instance.new("ImageButton", G2L["15b"]);
+G2L["18e"]["BorderSizePixel"] = 0;
+G2L["18e"]["BackgroundColor3"] = Color3.fromRGB(15, 17, 19);
+G2L["18e"]["Image"] = [[rbxthumb://type=Asset&id=500296952&w=150&h=150]];
+G2L["18e"]["Size"] = UDim2.new(0, 68, 0, 68);
+G2L["18e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18e"]["Position"] = UDim2.new(0.7622, 0, 0.0818, 0);
+
+
+-- StarterGui.ScreenGui.Main.Player.ScrollingFrame.Cosmetics.ImageButton.LocalScript
+G2L["18f"] = Instance.new("LocalScript", G2L["18e"]);
+
+
+
+-- StarterGui.ScreenGui.Main.Player.ScrollingFrame.Cosmetics.ImageButton.UICorner
+G2L["190"] = Instance.new("UICorner", G2L["18e"]);
+G2L["190"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.ScreenGui.Main.Player.ScrollingFrame.Cosmetics.ImageButton.UIStroke
+G2L["191"] = Instance.new("UIStroke", G2L["18e"]);
+G2L["191"]["Transparency"] = 0.5;
+G2L["191"]["Color"] = Color3.fromRGB(98, 98, 98);
+G2L["191"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Main.Player.ScrollingFrame.Cosmetics.ImageButton.TextLabel
+G2L["192"] = Instance.new("TextLabel", G2L["18e"]);
+G2L["192"]["TextWrapped"] = true;
+G2L["192"]["BorderSizePixel"] = 0;
+G2L["192"]["TextSize"] = 14;
+G2L["192"]["TextScaled"] = true;
+G2L["192"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["192"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["192"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["192"]["BackgroundTransparency"] = 1;
+G2L["192"]["Size"] = UDim2.new(0, 67, 0, 22);
+G2L["192"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["192"]["Text"] = [[Pirate Hat]];
+G2L["192"]["Position"] = UDim2.new(0, 0, 0.66266, 0);
+
+
+-- StarterGui.ScreenGui.Main.Waypoints
+G2L["193"] = Instance.new("Frame", G2L["2"]);
+G2L["193"]["Visible"] = false;
+G2L["193"]["BorderSizePixel"] = 0;
+G2L["193"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["193"]["Size"] = UDim2.new(0, 664, 0, 384);
+G2L["193"]["Position"] = UDim2.new(0.20096, 0, 0.08571, 0);
+G2L["193"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["193"]["Name"] = [[Waypoints]];
+
+
+-- StarterGui.ScreenGui.Main.Waypoints.LocalScript
+G2L["194"] = Instance.new("LocalScript", G2L["193"]);
+
+
+
 -- StarterGui.ScreenGui.Main.Waypoints.Waypoints Frame
-G2L["18b"] = Instance.new("ScrollingFrame", G2L["189"]);
-G2L["18b"]["Active"] = true;
-G2L["18b"]["BorderSizePixel"] = 0;
-G2L["18b"]["CanvasSize"] = UDim2.new(0, 0, 4, 0);
-G2L["18b"]["Name"] = [[Waypoints Frame]];
-G2L["18b"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
-G2L["18b"]["Size"] = UDim2.new(0, 651, 0, 252);
-G2L["18b"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["18b"]["Position"] = UDim2.new(0, 0, 0.34573, 0);
-G2L["18b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["195"] = Instance.new("ScrollingFrame", G2L["193"]);
+G2L["195"]["Active"] = true;
+G2L["195"]["BorderSizePixel"] = 0;
+G2L["195"]["CanvasSize"] = UDim2.new(0, 0, 4, 0);
+G2L["195"]["Name"] = [[Waypoints Frame]];
+G2L["195"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["195"]["Size"] = UDim2.new(0, 651, 0, 252);
+G2L["195"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["195"]["Position"] = UDim2.new(0, 0, 0.34573, 0);
+G2L["195"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
 -- StarterGui.ScreenGui.Main.Waypoints.Waypoints Frame.WaypointTemplate
-G2L["18c"] = Instance.new("Frame", G2L["18b"]);
-G2L["18c"]["BorderSizePixel"] = 0;
-G2L["18c"]["BackgroundColor3"] = Color3.fromRGB(18, 20, 23);
-G2L["18c"]["Size"] = UDim2.new(0, 627, 0, 37);
-G2L["18c"]["Position"] = UDim2.new(0.01355, 0, 0.00391, 0);
-G2L["18c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["18c"]["Name"] = [[WaypointTemplate]];
+G2L["196"] = Instance.new("Frame", G2L["195"]);
+G2L["196"]["BorderSizePixel"] = 0;
+G2L["196"]["BackgroundColor3"] = Color3.fromRGB(18, 20, 23);
+G2L["196"]["Size"] = UDim2.new(0, 627, 0, 37);
+G2L["196"]["Position"] = UDim2.new(0.01355, 0, 0.00391, 0);
+G2L["196"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["196"]["Name"] = [[WaypointTemplate]];
 
 
 -- StarterGui.ScreenGui.Main.Waypoints.Waypoints Frame.WaypointTemplate.UICorner
-G2L["18d"] = Instance.new("UICorner", G2L["18c"]);
-G2L["18d"]["CornerRadius"] = UDim.new(0, 6);
-
-
--- StarterGui.ScreenGui.Main.Waypoints.Waypoints Frame.WaypointTemplate.UIStroke
-G2L["18e"] = Instance.new("UIStroke", G2L["18c"]);
-G2L["18e"]["Transparency"] = 0.5;
-G2L["18e"]["Color"] = Color3.fromRGB(98, 98, 98);
-G2L["18e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.ScreenGui.Main.Waypoints.Waypoints Frame.WaypointTemplate.WaypointIcon
-G2L["18f"] = Instance.new("ImageLabel", G2L["18c"]);
-G2L["18f"]["BorderSizePixel"] = 0;
-G2L["18f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["18f"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]];
-G2L["18f"]["Size"] = UDim2.new(0, 24, 0, 24);
-G2L["18f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["18f"]["BackgroundTransparency"] = 1;
-G2L["18f"]["Name"] = [[WaypointIcon]];
-G2L["18f"]["Position"] = UDim2.new(0.00791, 0, 0.13514, 0);
-
-
--- StarterGui.ScreenGui.Main.Waypoints.Waypoints Frame.WaypointTemplate.WaypointName
-G2L["190"] = Instance.new("TextLabel", G2L["18c"]);
-G2L["190"]["BorderSizePixel"] = 0;
-G2L["190"]["TextSize"] = 17;
-G2L["190"]["TextXAlignment"] = Enum.TextXAlignment.Left;
-G2L["190"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["190"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["190"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["190"]["BackgroundTransparency"] = 1;
-G2L["190"]["Size"] = UDim2.new(0, 220, 0, 26);
-G2L["190"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["190"]["Text"] = [[Template Name]];
-G2L["190"]["Name"] = [[WaypointName]];
-G2L["190"]["Position"] = UDim2.new(0.06804, 0, 0.13514, 0);
-
-
--- StarterGui.ScreenGui.Main.Waypoints.Waypoints Frame.WaypointTemplate.DeleteButton
-G2L["191"] = Instance.new("ImageButton", G2L["18c"]);
-G2L["191"]["BorderSizePixel"] = 0;
-G2L["191"]["BackgroundTransparency"] = 1;
-G2L["191"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["191"]["Image"] = [[rbxassetid://118811910405144]];
-G2L["191"]["Size"] = UDim2.new(0, 23, 0, 23);
-G2L["191"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["191"]["Name"] = [[DeleteButton]];
-G2L["191"]["Position"] = UDim2.new(0.94778, 0, 0.16216, 0);
-
-
--- StarterGui.ScreenGui.Main.Waypoints.Waypoints Frame.WaypointTemplate.ShowButton
-G2L["192"] = Instance.new("ImageButton", G2L["18c"]);
-G2L["192"]["BorderSizePixel"] = 0;
-G2L["192"]["BackgroundTransparency"] = 1;
-G2L["192"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["192"]["Image"] = [[rbxassetid://3926307971]];
-G2L["192"]["ImageRectSize"] = Vector2.new(36, 36);
-G2L["192"]["Size"] = UDim2.new(0, 23, 0, 23);
-G2L["192"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["192"]["Name"] = [[ShowButton]];
-G2L["192"]["ImageRectOffset"] = Vector2.new(84, 44);
-G2L["192"]["Position"] = UDim2.new(0.89082, 0, 0.18919, 0);
-
-
--- StarterGui.ScreenGui.Main.Waypoints.Waypoints Frame.WaypointTemplate.EditButton
-G2L["193"] = Instance.new("ImageButton", G2L["18c"]);
-G2L["193"]["BorderSizePixel"] = 0;
-G2L["193"]["BackgroundTransparency"] = 1;
-G2L["193"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["193"]["Image"] = [[rbxassetid://15911231575]];
-G2L["193"]["Size"] = UDim2.new(0, 23, 0, 23);
-G2L["193"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["193"]["Name"] = [[EditButton]];
-G2L["193"]["Position"] = UDim2.new(0.83544, 0, 0.18919, 0);
-
-
--- StarterGui.ScreenGui.Main.Waypoints.Waypoints Frame.UICorner
-G2L["194"] = Instance.new("UICorner", G2L["18b"]);
-G2L["194"]["CornerRadius"] = UDim.new(0, 6);
-
-
--- StarterGui.ScreenGui.Main.Waypoints.Waypoints Frame.UIStroke
-G2L["195"] = Instance.new("UIStroke", G2L["18b"]);
-G2L["195"]["Transparency"] = 0.5;
-G2L["195"]["Color"] = Color3.fromRGB(98, 98, 98);
-G2L["195"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.ScreenGui.Main.Waypoints.IconImage
-G2L["196"] = Instance.new("ImageLabel", G2L["189"]);
-G2L["196"]["BorderSizePixel"] = 0;
-G2L["196"]["BackgroundColor3"] = Color3.fromRGB(18, 20, 23);
-G2L["196"]["Size"] = UDim2.new(0, 85, 0, 85);
-G2L["196"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["196"]["Name"] = [[IconImage]];
-G2L["196"]["Position"] = UDim2.new(0.03561, 0, 0.03906, 0);
-
-
--- StarterGui.ScreenGui.Main.Waypoints.IconImage.UICorner
 G2L["197"] = Instance.new("UICorner", G2L["196"]);
 G2L["197"]["CornerRadius"] = UDim.new(0, 6);
 
 
--- StarterGui.ScreenGui.Main.Waypoints.IconImage.UIStroke
+-- StarterGui.ScreenGui.Main.Waypoints.Waypoints Frame.WaypointTemplate.UIStroke
 G2L["198"] = Instance.new("UIStroke", G2L["196"]);
 G2L["198"]["Transparency"] = 0.5;
 G2L["198"]["Color"] = Color3.fromRGB(98, 98, 98);
 G2L["198"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.ScreenGui.Main.Waypoints.IconID
-G2L["199"] = Instance.new("TextBox", G2L["189"]);
-G2L["199"]["Name"] = [[IconID]];
-G2L["199"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+-- StarterGui.ScreenGui.Main.Waypoints.Waypoints Frame.WaypointTemplate.WaypointIcon
+G2L["199"] = Instance.new("ImageLabel", G2L["196"]);
 G2L["199"]["BorderSizePixel"] = 0;
-G2L["199"]["TextSize"] = 14;
-G2L["199"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["199"]["BackgroundColor3"] = Color3.fromRGB(18, 20, 23);
-G2L["199"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["199"]["PlaceholderText"] = [[Icon ID]];
-G2L["199"]["Size"] = UDim2.new(0, 99, 0, 21);
-G2L["199"]["Position"] = UDim2.new(0.0246, 0, 0.27604, 0);
+G2L["199"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["199"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]];
+G2L["199"]["Size"] = UDim2.new(0, 24, 0, 24);
 G2L["199"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["199"]["Text"] = [[]];
+G2L["199"]["BackgroundTransparency"] = 1;
+G2L["199"]["Name"] = [[WaypointIcon]];
+G2L["199"]["Position"] = UDim2.new(0.00791, 0, 0.13514, 0);
+
+
+-- StarterGui.ScreenGui.Main.Waypoints.Waypoints Frame.WaypointTemplate.WaypointName
+G2L["19a"] = Instance.new("TextLabel", G2L["196"]);
+G2L["19a"]["BorderSizePixel"] = 0;
+G2L["19a"]["TextSize"] = 17;
+G2L["19a"]["TextXAlignment"] = Enum.TextXAlignment.Left;
+G2L["19a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19a"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["19a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19a"]["BackgroundTransparency"] = 1;
+G2L["19a"]["Size"] = UDim2.new(0, 220, 0, 26);
+G2L["19a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19a"]["Text"] = [[Template Name]];
+G2L["19a"]["Name"] = [[WaypointName]];
+G2L["19a"]["Position"] = UDim2.new(0.06804, 0, 0.13514, 0);
+
+
+-- StarterGui.ScreenGui.Main.Waypoints.Waypoints Frame.WaypointTemplate.DeleteButton
+G2L["19b"] = Instance.new("ImageButton", G2L["196"]);
+G2L["19b"]["BorderSizePixel"] = 0;
+G2L["19b"]["BackgroundTransparency"] = 1;
+G2L["19b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19b"]["Image"] = [[rbxassetid://118811910405144]];
+G2L["19b"]["Size"] = UDim2.new(0, 23, 0, 23);
+G2L["19b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19b"]["Name"] = [[DeleteButton]];
+G2L["19b"]["Position"] = UDim2.new(0.94778, 0, 0.16216, 0);
+
+
+-- StarterGui.ScreenGui.Main.Waypoints.Waypoints Frame.WaypointTemplate.ShowButton
+G2L["19c"] = Instance.new("ImageButton", G2L["196"]);
+G2L["19c"]["BorderSizePixel"] = 0;
+G2L["19c"]["BackgroundTransparency"] = 1;
+G2L["19c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19c"]["Image"] = [[rbxassetid://3926307971]];
+G2L["19c"]["ImageRectSize"] = Vector2.new(36, 36);
+G2L["19c"]["Size"] = UDim2.new(0, 23, 0, 23);
+G2L["19c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19c"]["Name"] = [[ShowButton]];
+G2L["19c"]["ImageRectOffset"] = Vector2.new(84, 44);
+G2L["19c"]["Position"] = UDim2.new(0.89082, 0, 0.18919, 0);
+
+
+-- StarterGui.ScreenGui.Main.Waypoints.Waypoints Frame.WaypointTemplate.EditButton
+G2L["19d"] = Instance.new("ImageButton", G2L["196"]);
+G2L["19d"]["BorderSizePixel"] = 0;
+G2L["19d"]["BackgroundTransparency"] = 1;
+G2L["19d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["19d"]["Image"] = [[rbxassetid://15911231575]];
+G2L["19d"]["Size"] = UDim2.new(0, 23, 0, 23);
+G2L["19d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["19d"]["Name"] = [[EditButton]];
+G2L["19d"]["Position"] = UDim2.new(0.83544, 0, 0.18919, 0);
+
+
+-- StarterGui.ScreenGui.Main.Waypoints.Waypoints Frame.UICorner
+G2L["19e"] = Instance.new("UICorner", G2L["195"]);
+G2L["19e"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.ScreenGui.Main.Waypoints.Waypoints Frame.UIStroke
+G2L["19f"] = Instance.new("UIStroke", G2L["195"]);
+G2L["19f"]["Transparency"] = 0.5;
+G2L["19f"]["Color"] = Color3.fromRGB(98, 98, 98);
+G2L["19f"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Main.Waypoints.IconImage
+G2L["1a0"] = Instance.new("ImageLabel", G2L["193"]);
+G2L["1a0"]["BorderSizePixel"] = 0;
+G2L["1a0"]["BackgroundColor3"] = Color3.fromRGB(18, 20, 23);
+G2L["1a0"]["Size"] = UDim2.new(0, 85, 0, 85);
+G2L["1a0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a0"]["Name"] = [[IconImage]];
+G2L["1a0"]["Position"] = UDim2.new(0.03561, 0, 0.03906, 0);
+
+
+-- StarterGui.ScreenGui.Main.Waypoints.IconImage.UICorner
+G2L["1a1"] = Instance.new("UICorner", G2L["1a0"]);
+G2L["1a1"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.ScreenGui.Main.Waypoints.IconImage.UIStroke
+G2L["1a2"] = Instance.new("UIStroke", G2L["1a0"]);
+G2L["1a2"]["Transparency"] = 0.5;
+G2L["1a2"]["Color"] = Color3.fromRGB(98, 98, 98);
+G2L["1a2"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.Main.Waypoints.IconID
+G2L["1a3"] = Instance.new("TextBox", G2L["193"]);
+G2L["1a3"]["Name"] = [[IconID]];
+G2L["1a3"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a3"]["BorderSizePixel"] = 0;
+G2L["1a3"]["TextSize"] = 14;
+G2L["1a3"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a3"]["BackgroundColor3"] = Color3.fromRGB(18, 20, 23);
+G2L["1a3"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a3"]["PlaceholderText"] = [[Icon ID]];
+G2L["1a3"]["Size"] = UDim2.new(0, 99, 0, 21);
+G2L["1a3"]["Position"] = UDim2.new(0.0246, 0, 0.27604, 0);
+G2L["1a3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a3"]["Text"] = [[]];
 
 
 -- StarterGui.ScreenGui.Main.Waypoints.IconID.UICorner
-G2L["19a"] = Instance.new("UICorner", G2L["199"]);
-G2L["19a"]["CornerRadius"] = UDim.new(0, 6);
+G2L["1a4"] = Instance.new("UICorner", G2L["1a3"]);
+G2L["1a4"]["CornerRadius"] = UDim.new(0, 6);
 
 
 -- StarterGui.ScreenGui.Main.Waypoints.IconID.UIStroke
-G2L["19b"] = Instance.new("UIStroke", G2L["199"]);
-G2L["19b"]["Transparency"] = 0.5;
-G2L["19b"]["Color"] = Color3.fromRGB(98, 98, 98);
-G2L["19b"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["1a5"] = Instance.new("UIStroke", G2L["1a3"]);
+G2L["1a5"]["Transparency"] = 0.5;
+G2L["1a5"]["Color"] = Color3.fromRGB(98, 98, 98);
+G2L["1a5"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Main.Waypoints.Name
-G2L["19c"] = Instance.new("TextBox", G2L["189"]);
-G2L["19c"]["Name"] = [[Name]];
-G2L["19c"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19c"]["BorderSizePixel"] = 0;
-G2L["19c"]["TextSize"] = 14;
-G2L["19c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19c"]["BackgroundColor3"] = Color3.fromRGB(18, 20, 23);
-G2L["19c"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["19c"]["PlaceholderText"] = [[Waypoint Name]];
-G2L["19c"]["Size"] = UDim2.new(0, 168, 0, 27);
-G2L["19c"]["Position"] = UDim2.new(0.1878, 0, 0.03906, 0);
-G2L["19c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19c"]["Text"] = [[]];
+G2L["1a6"] = Instance.new("TextBox", G2L["193"]);
+G2L["1a6"]["Name"] = [[Name]];
+G2L["1a6"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a6"]["BorderSizePixel"] = 0;
+G2L["1a6"]["TextSize"] = 14;
+G2L["1a6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a6"]["BackgroundColor3"] = Color3.fromRGB(18, 20, 23);
+G2L["1a6"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a6"]["PlaceholderText"] = [[Waypoint Name]];
+G2L["1a6"]["Size"] = UDim2.new(0, 168, 0, 27);
+G2L["1a6"]["Position"] = UDim2.new(0.1878, 0, 0.03906, 0);
+G2L["1a6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a6"]["Text"] = [[]];
 
 
 -- StarterGui.ScreenGui.Main.Waypoints.Name.UICorner
-G2L["19d"] = Instance.new("UICorner", G2L["19c"]);
-G2L["19d"]["CornerRadius"] = UDim.new(0, 6);
+G2L["1a7"] = Instance.new("UICorner", G2L["1a6"]);
+G2L["1a7"]["CornerRadius"] = UDim.new(0, 6);
 
 
 -- StarterGui.ScreenGui.Main.Waypoints.Name.UIStroke
-G2L["19e"] = Instance.new("UIStroke", G2L["19c"]);
-G2L["19e"]["Transparency"] = 0.5;
-G2L["19e"]["Color"] = Color3.fromRGB(98, 98, 98);
-G2L["19e"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["1a8"] = Instance.new("UIStroke", G2L["1a6"]);
+G2L["1a8"]["Transparency"] = 0.5;
+G2L["1a8"]["Color"] = Color3.fromRGB(98, 98, 98);
+G2L["1a8"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Main.Waypoints.AddWaypoint
-G2L["19f"] = Instance.new("TextButton", G2L["189"]);
-G2L["19f"]["BorderSizePixel"] = 0;
-G2L["19f"]["TextSize"] = 14;
-G2L["19f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["19f"]["BackgroundColor3"] = Color3.fromRGB(18, 20, 23);
-G2L["19f"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-G2L["19f"]["Size"] = UDim2.new(0, 168, 0, 26);
-G2L["19f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["19f"]["Text"] = [[Add Waypoint]];
-G2L["19f"]["Name"] = [[AddWaypoint]];
-G2L["19f"]["Position"] = UDim2.new(0.18694, 0, 0.13281, 0);
+G2L["1a9"] = Instance.new("TextButton", G2L["193"]);
+G2L["1a9"]["BorderSizePixel"] = 0;
+G2L["1a9"]["TextSize"] = 14;
+G2L["1a9"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1a9"]["BackgroundColor3"] = Color3.fromRGB(18, 20, 23);
+G2L["1a9"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a9"]["Size"] = UDim2.new(0, 168, 0, 26);
+G2L["1a9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a9"]["Text"] = [[Add Waypoint]];
+G2L["1a9"]["Name"] = [[AddWaypoint]];
+G2L["1a9"]["Position"] = UDim2.new(0.18694, 0, 0.13281, 0);
 
 
 -- StarterGui.ScreenGui.Main.Waypoints.AddWaypoint.UICorner
-G2L["1a0"] = Instance.new("UICorner", G2L["19f"]);
-G2L["1a0"]["CornerRadius"] = UDim.new(0, 6);
+G2L["1aa"] = Instance.new("UICorner", G2L["1a9"]);
+G2L["1aa"]["CornerRadius"] = UDim.new(0, 6);
 
 
 -- StarterGui.ScreenGui.Main.Waypoints.AddWaypoint.UIStroke
-G2L["1a1"] = Instance.new("UIStroke", G2L["19f"]);
-G2L["1a1"]["Transparency"] = 0.5;
-G2L["1a1"]["Color"] = Color3.fromRGB(98, 98, 98);
-G2L["1a1"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["1ab"] = Instance.new("UIStroke", G2L["1a9"]);
+G2L["1ab"]["Transparency"] = 0.5;
+G2L["1ab"]["Color"] = Color3.fromRGB(98, 98, 98);
+G2L["1ab"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.OpenButton
+G2L["1ac"] = Instance.new("ImageButton", G2L["1"]);
+G2L["1ac"]["BorderSizePixel"] = 0;
+G2L["1ac"]["Visible"] = false;
+G2L["1ac"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["1ac"]["Image"] = [[rbxassetid://132980854944779]];
+G2L["1ac"]["Size"] = UDim2.new(0, 53, 0, 53);
+G2L["1ac"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ac"]["Name"] = [[OpenButton]];
+G2L["1ac"]["Position"] = UDim2.new(0.49619, 0, 0.45586, 0);
+
+
+-- StarterGui.ScreenGui.OpenButton.UICorner
+G2L["1ad"] = Instance.new("UICorner", G2L["1ac"]);
+
+
+
+-- StarterGui.ScreenGui.OpenButton.UIStroke
+G2L["1ae"] = Instance.new("UIStroke", G2L["1ac"]);
+G2L["1ae"]["Transparency"] = 0.5;
+G2L["1ae"]["Color"] = Color3.fromRGB(98, 98, 98);
+G2L["1ae"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.OpenButton.UIDrag
+G2L["1af"] = Instance.new("LocalScript", G2L["1ac"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["1af"]["Sandboxed"] = true;
+G2L["1af"]["Name"] = [[UIDrag]];
+
+
+-- StarterGui.ScreenGui.OpenButton.LocalScript
+G2L["1b0"] = Instance.new("LocalScript", G2L["1ac"]);
+
 
 
 -- StarterGui.ScreenGui.Main.UIDrag
@@ -3779,9 +3901,9 @@ task.spawn(C_6);
 local function C_8()
 local script = G2L["8"];
 	local TweenService = game:GetService("TweenService")
-	
 	local closeButton = script.Parent
 	local executor = closeButton.Parent
+	local openButton = executor.Parent:WaitForChild("OpenButton") -- OpenButton должен лежать рядом с фреймом (тот же родитель)
 	
 	local TWEEN_TIME = 0.25
 	local EASING_STYLE = Enum.EasingStyle.Quad
@@ -3797,19 +3919,16 @@ local script = G2L["8"];
 		return list
 	end
 	
-	local originalBgTransparency = {}
-	local originalTextTransparency = {}
-	local originalImageTransparency = {}
-	
+	-- Сохраняем оригинальную прозрачность в Attribute (доступно и другому скрипту)
 	for _, obj in getAllGuiObjects() do
-		originalBgTransparency[obj] = obj.BackgroundTransparency
-	
-		if obj:IsA("TextLabel") or obj:IsA("TextButton") or obj:IsA("TextBox") then
-			originalTextTransparency[obj] = obj.TextTransparency
+		if obj:GetAttribute("OrigBgTransparency") == nil then
+			obj:SetAttribute("OrigBgTransparency", obj.BackgroundTransparency)
 		end
-	
-		if obj:IsA("ImageLabel") or obj:IsA("ImageButton") then
-			originalImageTransparency[obj] = obj.ImageTransparency
+		if (obj:IsA("TextLabel") or obj:IsA("TextButton") or obj:IsA("TextBox")) and obj:GetAttribute("OrigTextTransparency") == nil then
+			obj:SetAttribute("OrigTextTransparency", obj.TextTransparency)
+		end
+		if (obj:IsA("ImageLabel") or obj:IsA("ImageButton")) and obj:GetAttribute("OrigImageTransparency") == nil then
+			obj:SetAttribute("OrigImageTransparency", obj.ImageTransparency)
 		end
 	end
 	
@@ -3820,22 +3939,17 @@ local script = G2L["8"];
 		isAnimating = true
 	
 		local tweens = {}
-	
 		for _, obj in getAllGuiObjects() do
 			local props = {}
-	
-			if originalBgTransparency[obj] ~= nil then
+			if obj:GetAttribute("OrigBgTransparency") ~= nil then
 				props.BackgroundTransparency = 1
 			end
-	
-			if originalTextTransparency[obj] ~= nil then
+			if obj:GetAttribute("OrigTextTransparency") ~= nil then
 				props.TextTransparency = 1
 			end
-	
-			if originalImageTransparency[obj] ~= nil then
+			if obj:GetAttribute("OrigImageTransparency") ~= nil then
 				props.ImageTransparency = 1
 			end
-	
 			if next(props) then
 				local tween = TweenService:Create(obj, TweenInfo.new(TWEEN_TIME, EASING_STYLE, EASING_DIRECTION), props)
 				table.insert(tweens, tween)
@@ -3846,17 +3960,18 @@ local script = G2L["8"];
 			tween:Play()
 		end
 	
-		if tweens[1] then
-			tweens[1].Completed:Connect(function()
-				executor.Visible = false
-				isAnimating = false
-			end)
-		else
+		local function finish()
 			executor.Visible = false
+			openButton.Visible = true
 			isAnimating = false
 		end
-	end)
 	
+		if tweens[1] then
+			tweens[1].Completed:Connect(finish)
+		else
+			finish()
+		end
+	end)
 end;
 task.spawn(C_8);
 -- StarterGui.ScreenGui.Main.ImageButton.LocalScript
@@ -5861,9 +5976,119 @@ local script = G2L["185"];
 	end)
 end;
 task.spawn(C_185);
--- StarterGui.ScreenGui.Main.Waypoints.LocalScript
+-- StarterGui.ScreenGui.Main.Player.ScrollingFrame.Cosmetics.ImageButton.LocalScript
 local function C_18a()
 local script = G2L["18a"];
+	local player = game.Players.LocalPlayer
+	local button = script.Parent
+	
+	local equipped = false
+	local hatModel
+	
+	local function createHat(character)
+		local head = character:WaitForChild("Head")
+	
+		local handle = Instance.new("Part")
+		handle.Name = "Handle"
+		handle.Size = Vector3.new(3, 1.5, 3)
+		handle.Anchored = false
+		handle.CanCollide = false
+		handle.Massless = true
+		handle.Material = Enum.Material.SmoothPlastic
+	
+		local mesh = Instance.new("SpecialMesh")
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = "rbxassetid://1082802"
+		mesh.TextureId = "rbxassetid://1082804"
+		mesh.Scale = Vector3.new(1, 1, 1)
+		mesh.Parent = handle
+	
+		-- стартовое смещение выше головы, подбирай число под конкретный меш
+		handle.CFrame = head.CFrame * CFrame.new(0, 1.5, 0)
+		handle.Parent = character
+	
+		local weld = Instance.new("WeldConstraint")
+		weld.Part0 = head
+		weld.Part1 = handle
+		weld.Parent = head
+	
+		return handle
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		local character = player.Character
+		if not character then return end
+	
+		if equipped then
+			if hatModel then hatModel:Destroy() end
+			equipped = false
+			button.ImageColor3 = Color3.new(1, 1, 1)
+		else
+			hatModel = createHat(character)
+			equipped = true
+			button.ImageColor3 = Color3.fromRGB(120, 255, 120)
+		end
+	end)
+end;
+task.spawn(C_18a);
+-- StarterGui.ScreenGui.Main.Player.ScrollingFrame.Cosmetics.ImageButton.LocalScript
+local function C_18f()
+local script = G2L["18f"];
+	local player = game.Players.LocalPlayer
+	local button = script.Parent
+	
+	local equipped = false
+	local hatModel
+	
+	local function createHat(character)
+		local head = character:WaitForChild("Head")
+	
+		local handle = Instance.new("Part")
+		handle.Name = "Handle"
+		handle.Size = Vector3.new(3, 1.5, 3)
+		handle.Anchored = false
+		handle.CanCollide = false
+		handle.Massless = true
+		handle.Material = Enum.Material.SmoothPlastic
+	
+		local mesh = Instance.new("SpecialMesh")
+		mesh.MeshType = Enum.MeshType.FileMesh
+		mesh.MeshId = "rbxassetid://500296952"
+		mesh.TextureId = "rbxassetid://623000592"
+		mesh.Scale = Vector3.new(1, 1, 1)
+		mesh.Parent = handle
+	
+		-- стартовое смещение выше головы
+		handle.CFrame = head.CFrame * CFrame.new(0, 1.5, 0)
+		handle.Parent = character
+	
+		local weld = Instance.new("WeldConstraint")
+		weld.Part0 = head
+		weld.Part1 = handle
+		weld.Parent = head
+	
+		return handle
+	end
+	
+	button.MouseButton1Click:Connect(function()
+		local character = player.Character
+		if not character then return end
+	
+		if equipped then
+			if hatModel then hatModel:Destroy() end
+			equipped = false
+			button.ImageColor3 = Color3.new(1, 1, 1)
+		else
+			hatModel = createHat(character)
+			equipped = true
+			button.ImageColor3 = Color3.fromRGB(120, 255, 120)
+		end
+	end)
+end;
+task.spawn(C_18f);
+-- StarterGui.ScreenGui.Main.Waypoints.LocalScript
+local function C_194()
+local script = G2L["194"];
 	local Players = game:GetService("Players")
 	local RunService = game:GetService("RunService")
 	
@@ -6173,6 +6398,122 @@ local script = G2L["18a"];
 		end
 	end)
 end;
-task.spawn(C_18a);
+task.spawn(C_194);
+-- StarterGui.ScreenGui.OpenButton.UIDrag
+local function C_1af()
+local script = G2L["1af"];
+	-- Made by Real_IceyDev (@lceyDex) --
+	-- Simple UI dragger (PC Only/Any device that has a mouse) --
+	
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end;
+task.spawn(C_1af);
+-- StarterGui.ScreenGui.OpenButton.LocalScript
+local function C_1b0()
+local script = G2L["1b0"];
+	local TweenService = game:GetService("TweenService")
+	local openButton = script.Parent
+	local executor = openButton.Parent:WaitForChild("Main") -- ЗАМЕНИ "Executor" на реальное имя твоего фрейма
+	
+	local TWEEN_TIME = 0.25
+	local EASING_STYLE = Enum.EasingStyle.Quad
+	local EASING_DIRECTION = Enum.EasingDirection.Out
+	
+	local function getAllGuiObjects()
+		local list = { executor }
+		for _, obj in executor:GetDescendants() do
+			if obj:IsA("GuiObject") then
+				table.insert(list, obj)
+			end
+		end
+		return list
+	end
+	
+	local isAnimating = false
+	
+	openButton.MouseButton1Click:Connect(function()
+		if isAnimating or executor.Visible then return end
+		isAnimating = true
+	
+		openButton.Visible = false
+		executor.Visible = true
+	
+		-- сразу делаем прозрачным перед плавным появлением
+		for _, obj in getAllGuiObjects() do
+			if obj:GetAttribute("OrigBgTransparency") ~= nil then
+				obj.BackgroundTransparency = 1
+			end
+			if obj:GetAttribute("OrigTextTransparency") ~= nil then
+				obj.TextTransparency = 1
+			end
+			if obj:GetAttribute("OrigImageTransparency") ~= nil then
+				obj.ImageTransparency = 1
+			end
+		end
+	
+		local tweens = {}
+		for _, obj in getAllGuiObjects() do
+			local props = {}
+			local bg = obj:GetAttribute("OrigBgTransparency")
+			local txt = obj:GetAttribute("OrigTextTransparency")
+			local img = obj:GetAttribute("OrigImageTransparency")
+			if bg ~= nil then props.BackgroundTransparency = bg end
+			if txt ~= nil then props.TextTransparency = txt end
+			if img ~= nil then props.ImageTransparency = img end
+			if next(props) then
+				local tween = TweenService:Create(obj, TweenInfo.new(TWEEN_TIME, EASING_STYLE, EASING_DIRECTION), props)
+				table.insert(tweens, tween)
+			end
+		end
+	
+		for _, tween in tweens do
+			tween:Play()
+		end
+	
+		local function finish()
+			isAnimating = false
+		end
+	
+		if tweens[1] then
+			tweens[1].Completed:Connect(finish)
+		else
+			finish()
+		end
+	end)
+end;
+task.spawn(C_1b0);
 
 return G2L["1"], require;
