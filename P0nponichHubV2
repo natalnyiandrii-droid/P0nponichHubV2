@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 433 | Scripts: 66 | Modules: 0 | Tags: 0
+-- Instances: 434 | Scripts: 67 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
@@ -3826,7 +3826,7 @@ G2L["1ad"]["Image"] = [[rbxassetid://132980854944779]];
 G2L["1ad"]["Size"] = UDim2.new(0, 53, 0, 53);
 G2L["1ad"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1ad"]["Name"] = [[OpenButton]];
-G2L["1ad"]["Position"] = UDim2.new(0.49619, 0, 0.45586, 0);
+G2L["1ad"]["Position"] = UDim2.new(0.08118, 0, 0.14851, 0);
 
 
 -- StarterGui.ScreenGui.OpenButton.UIDrag
@@ -3851,6 +3851,11 @@ G2L["1b1"] = Instance.new("UIStroke", G2L["1ad"]);
 G2L["1b1"]["Transparency"] = 0.5;
 G2L["1b1"]["Color"] = Color3.fromRGB(98, 98, 98);
 G2L["1b1"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+
+
+-- StarterGui.ScreenGui.OpenButton.LocalScript
+G2L["1b2"] = Instance.new("LocalScript", G2L["1ad"]);
+
 
 
 -- StarterGui.ScreenGui.Main.UIDrag
@@ -6554,5 +6559,38 @@ local script = G2L["1af"];
 	end)
 end;
 task.spawn(C_1af);
+-- StarterGui.ScreenGui.OpenButton.LocalScript
+local function C_1b2()
+local script = G2L["1b2"];
+	local UserInputService = game:GetService("UserInputService")
+	
+	local main = script.Parent:WaitForChild("Main")
+	
+	local previousMouseBehavior
+	
+	local function updateMouse()
+		if main.Visible then
+			-- Запоминаем состояние мыши перед открытием GUI
+			if previousMouseBehavior == nil then
+				previousMouseBehavior = UserInputService.MouseBehavior
+			end
+	
+			-- Даём свободно двигать курсором по GUI
+			UserInputService.MouseBehavior = Enum.MouseBehavior.Default
+			UserInputService.MouseIconEnabled = true
+		else
+			-- Возвращаем то состояние, которое было до GUI
+			if previousMouseBehavior then
+				UserInputService.MouseBehavior = previousMouseBehavior
+				previousMouseBehavior = nil
+			end
+		end
+	end
+	
+	main:GetPropertyChangedSignal("Visible"):Connect(updateMouse)
+	
+	updateMouse()
+end;
+task.spawn(C_1b2);
 
 return G2L["1"], require;
