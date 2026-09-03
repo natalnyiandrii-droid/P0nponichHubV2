@@ -7,11 +7,12 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 432 | Scripts: 65 | Modules: 0 | Tags: 0
+-- Instances: 433 | Scripts: 66 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.ScreenGui
 G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["DisplayOrder"] = 999999999;
 G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 G2L["1"]["ResetOnSpawn"] = false;
 
@@ -871,7 +872,7 @@ G2L["5b"] = Instance.new("ScrollingFrame", G2L["5a"]);
 G2L["5b"]["Active"] = true;
 G2L["5b"]["BorderSizePixel"] = 0;
 G2L["5b"]["CanvasSize"] = UDim2.new(0, 0, 4, 0);
-G2L["5b"]["CanvasPosition"] = Vector2.new(0, 600);
+G2L["5b"]["CanvasPosition"] = Vector2.new(0, 300);
 G2L["5b"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
 G2L["5b"]["Size"] = UDim2.new(0, 674, 0, 385);
 G2L["5b"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
@@ -3811,40 +3812,45 @@ G2L["1ab"]["Color"] = Color3.fromRGB(98, 98, 98);
 G2L["1ab"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
+-- StarterGui.ScreenGui.Main.LocalScript
+G2L["1ac"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
 -- StarterGui.ScreenGui.OpenButton
-G2L["1ac"] = Instance.new("ImageButton", G2L["1"]);
-G2L["1ac"]["BorderSizePixel"] = 0;
-G2L["1ac"]["Visible"] = false;
-G2L["1ac"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
-G2L["1ac"]["Image"] = [[rbxassetid://132980854944779]];
-G2L["1ac"]["Size"] = UDim2.new(0, 53, 0, 53);
-G2L["1ac"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1ac"]["Name"] = [[OpenButton]];
-G2L["1ac"]["Position"] = UDim2.new(0.49619, 0, 0.45586, 0);
+G2L["1ad"] = Instance.new("ImageButton", G2L["1"]);
+G2L["1ad"]["BorderSizePixel"] = 0;
+G2L["1ad"]["Visible"] = false;
+G2L["1ad"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
+G2L["1ad"]["Image"] = [[rbxassetid://132980854944779]];
+G2L["1ad"]["Size"] = UDim2.new(0, 53, 0, 53);
+G2L["1ad"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1ad"]["Name"] = [[OpenButton]];
+G2L["1ad"]["Position"] = UDim2.new(0.49619, 0, 0.45586, 0);
+
+
+-- StarterGui.ScreenGui.OpenButton.UIDrag
+G2L["1ae"] = Instance.new("LocalScript", G2L["1ad"]);
+-- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
+G2L["1ae"]["Sandboxed"] = true;
+G2L["1ae"]["Name"] = [[UIDrag]];
+
+
+-- StarterGui.ScreenGui.OpenButton.LocalScript
+G2L["1af"] = Instance.new("LocalScript", G2L["1ad"]);
+
 
 
 -- StarterGui.ScreenGui.OpenButton.UICorner
-G2L["1ad"] = Instance.new("UICorner", G2L["1ac"]);
+G2L["1b0"] = Instance.new("UICorner", G2L["1ad"]);
 
 
 
 -- StarterGui.ScreenGui.OpenButton.UIStroke
-G2L["1ae"] = Instance.new("UIStroke", G2L["1ac"]);
-G2L["1ae"]["Transparency"] = 0.5;
-G2L["1ae"]["Color"] = Color3.fromRGB(98, 98, 98);
-G2L["1ae"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
-
-
--- StarterGui.ScreenGui.OpenButton.UIDrag
-G2L["1af"] = Instance.new("LocalScript", G2L["1ac"]);
--- [ERROR] cannot convert Capabilities, please report to "https://github.com/uniquadev/GuiToLuaConverter/issues"
-G2L["1af"]["Sandboxed"] = true;
-G2L["1af"]["Name"] = [[UIDrag]];
-
-
--- StarterGui.ScreenGui.OpenButton.LocalScript
-G2L["1b0"] = Instance.new("LocalScript", G2L["1ac"]);
-
+G2L["1b1"] = Instance.new("UIStroke", G2L["1ad"]);
+G2L["1b1"]["Transparency"] = 0.5;
+G2L["1b1"]["Color"] = Color3.fromRGB(98, 98, 98);
+G2L["1b1"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
 -- StarterGui.ScreenGui.Main.UIDrag
@@ -6399,9 +6405,42 @@ local script = G2L["194"];
 	end)
 end;
 task.spawn(C_194);
+-- StarterGui.ScreenGui.Main.LocalScript
+local function C_1ac()
+local script = G2L["1ac"];
+	local UserInputService = game:GetService("UserInputService")
+	
+	local main = script.Parent:WaitForChild("Main")
+	
+	local previousMouseBehavior
+	
+	local function updateMouse()
+		if main.Visible then
+			-- Запоминаем состояние мыши перед открытием GUI
+			if previousMouseBehavior == nil then
+				previousMouseBehavior = UserInputService.MouseBehavior
+			end
+	
+			-- Даём свободно двигать курсором по GUI
+			UserInputService.MouseBehavior = Enum.MouseBehavior.Default
+			UserInputService.MouseIconEnabled = true
+		else
+			-- Возвращаем то состояние, которое было до GUI
+			if previousMouseBehavior then
+				UserInputService.MouseBehavior = previousMouseBehavior
+				previousMouseBehavior = nil
+			end
+		end
+	end
+	
+	main:GetPropertyChangedSignal("Visible"):Connect(updateMouse)
+	
+	updateMouse()
+end;
+task.spawn(C_1ac);
 -- StarterGui.ScreenGui.OpenButton.UIDrag
-local function C_1af()
-local script = G2L["1af"];
+local function C_1ae()
+local script = G2L["1ae"];
 	-- Made by Real_IceyDev (@lceyDex) --
 	-- Simple UI dragger (PC Only/Any device that has a mouse) --
 	
@@ -6440,10 +6479,10 @@ local script = G2L["1af"];
 		end
 	end)
 end;
-task.spawn(C_1af);
+task.spawn(C_1ae);
 -- StarterGui.ScreenGui.OpenButton.LocalScript
-local function C_1b0()
-local script = G2L["1b0"];
+local function C_1af()
+local script = G2L["1af"];
 	local TweenService = game:GetService("TweenService")
 	local openButton = script.Parent
 	local executor = openButton.Parent:WaitForChild("Main") -- ЗАМЕНИ "Executor" на реальное имя твоего фрейма
@@ -6514,6 +6553,6 @@ local script = G2L["1b0"];
 		end
 	end)
 end;
-task.spawn(C_1b0);
+task.spawn(C_1af);
 
 return G2L["1"], require;
