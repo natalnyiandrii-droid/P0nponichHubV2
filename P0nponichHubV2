@@ -7492,17 +7492,23 @@ task.spawn(C_1b2);
 local function C_1b7()
 local script = G2L["1b7"];
 	local player = game.Players.LocalPlayer
-	local button = script.Parent -- этот скрипт лежит в ImageButton нимба
+	local button = script.Parent -- этот скрипт лежит в ImageButton крыльев
 	
 	local equipped = false
-	local haloModel
+	local wingsModel
 	
-	local function createHalo(character)
-		local head = character:WaitForChild("Head")
+	local function getTorso(character)
+		-- поддержка и R6, и R15 персонажей
+		return character:FindFirstChild("UpperTorso") or character:FindFirstChild("Torso")
+	end
+	
+	local function createWings(character)
+		local torso = getTorso(character)
+		if not torso then return nil end
 	
 		local handle = Instance.new("Part")
 		handle.Name = "Handle"
-		handle.Size = Vector3.new(2, 0.4, 2)
+		handle.Size = Vector3.new(3, 3, 1)
 		handle.Anchored = false
 		handle.CanCollide = false
 		handle.Massless = true
@@ -7510,18 +7516,18 @@ local script = G2L["1b7"];
 	
 		local mesh = Instance.new("SpecialMesh")
 		mesh.MeshType = Enum.MeshType.FileMesh
-		mesh.MeshId = "rbxassetid://3270017"
+		mesh.MeshId = "rbxassetid://96334959293762"
 		mesh.Scale = Vector3.new(1, 1, 1)
 		mesh.Parent = handle
 	
-		-- нимб парит НАД головой, развёрнут горизонтально (плашмя)
-		handle.CFrame = head.CFrame * CFrame.new(0, 1.8, 0) * CFrame.Angles(math.rad(90), 0, 0)
+		-- позиция за спиной, на уровне лопаток
+		handle.CFrame = torso.CFrame * CFrame.new(0, 0.5, 0.6)
 		handle.Parent = character
 	
 		local weld = Instance.new("WeldConstraint")
-		weld.Part0 = head
+		weld.Part0 = torso
 		weld.Part1 = handle
-		weld.Parent = head
+		weld.Parent = torso
 	
 		return handle
 	end
@@ -7531,11 +7537,11 @@ local script = G2L["1b7"];
 		if not character then return end
 	
 		if equipped then
-			if haloModel then haloModel:Destroy() end
+			if wingsModel then wingsModel:Destroy() end
 			equipped = false
 			button.ImageColor3 = Color3.new(1, 1, 1)
 		else
-			haloModel = createHalo(character)
+			wingsModel = createWings(character)
 			equipped = true
 			button.ImageColor3 = Color3.fromRGB(120, 255, 120)
 		end
