@@ -4150,17 +4150,17 @@ G2L["1d8"]["Color"] = Color3.fromRGB(98, 98, 98);
 G2L["1d8"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.ScreenGui.Main.Player
+-- StarterGui.ScreenGui.Main.Games
 G2L["1d9"] = Instance.new("Frame", G2L["2"]);
 G2L["1d9"]["BorderSizePixel"] = 0;
 G2L["1d9"]["BackgroundColor3"] = Color3.fromRGB(17, 17, 17);
 G2L["1d9"]["Size"] = UDim2.new(0, 674, 0, 384);
 G2L["1d9"]["Position"] = UDim2.new(0.18893, 0, 0.08571, 0);
 G2L["1d9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["1d9"]["Name"] = [[Player]];
+G2L["1d9"]["Name"] = [[Games]];
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame
 G2L["1da"] = Instance.new("ScrollingFrame", G2L["1d9"]);
 G2L["1da"]["Active"] = true;
 G2L["1da"]["BorderSizePixel"] = 0;
@@ -4171,7 +4171,7 @@ G2L["1da"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["1da"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton
 G2L["1db"] = Instance.new("TextButton", G2L["1da"]);
 G2L["1db"]["BorderSizePixel"] = 0;
 G2L["1db"]["TextSize"] = 14;
@@ -4185,24 +4185,24 @@ G2L["1db"]["Name"] = [[GameButton]];
 G2L["1db"]["Position"] = UDim2.new(0.00445, 0, 0.00456, 0);
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.ClientClickLogic
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.ClientClickLogic
 G2L["1dc"] = Instance.new("LocalScript", G2L["1db"]);
 G2L["1dc"]["Name"] = [[ClientClickLogic]];
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.UICorner
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.UICorner
 G2L["1dd"] = Instance.new("UICorner", G2L["1db"]);
 G2L["1dd"]["CornerRadius"] = UDim.new(0, 6);
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.UIStroke
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.UIStroke
 G2L["1de"] = Instance.new("UIStroke", G2L["1db"]);
 G2L["1de"]["Transparency"] = 0.5;
 G2L["1de"]["Color"] = Color3.fromRGB(98, 98, 98);
 G2L["1de"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.ImageLabel
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.ImageLabel
 G2L["1df"] = Instance.new("ImageLabel", G2L["1db"]);
 G2L["1df"]["BorderSizePixel"] = 0;
 G2L["1df"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -4213,7 +4213,7 @@ G2L["1df"]["BackgroundTransparency"] = 1;
 G2L["1df"]["Position"] = UDim2.new(0.00962, 0, 0.129, 0);
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.TextLabel
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.TextLabel
 G2L["1e0"] = Instance.new("TextLabel", G2L["1db"]);
 G2L["1e0"]["BorderSizePixel"] = 0;
 G2L["1e0"]["TextSize"] = 20;
@@ -4228,7 +4228,7 @@ G2L["1e0"]["Text"] = [[Blox Fruits]];
 G2L["1e0"]["Position"] = UDim2.new(0.05556, 0, 0, 0);
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton
 G2L["1e1"] = Instance.new("TextButton", G2L["1da"]);
 G2L["1e1"]["BorderSizePixel"] = 0;
 G2L["1e1"]["TextSize"] = 14;
@@ -4242,24 +4242,24 @@ G2L["1e1"]["Name"] = [[GameButton]];
 G2L["1e1"]["Position"] = UDim2.new(0.00593, 0, 0.02995, 0);
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.ClientClickLogic
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.ClientClickLogic
 G2L["1e2"] = Instance.new("LocalScript", G2L["1e1"]);
 G2L["1e2"]["Name"] = [[ClientClickLogic]];
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.UICorner
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.UICorner
 G2L["1e3"] = Instance.new("UICorner", G2L["1e1"]);
 G2L["1e3"]["CornerRadius"] = UDim.new(0, 6);
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.UIStroke
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.UIStroke
 G2L["1e4"] = Instance.new("UIStroke", G2L["1e1"]);
 G2L["1e4"]["Transparency"] = 0.5;
 G2L["1e4"]["Color"] = Color3.fromRGB(98, 98, 98);
 G2L["1e4"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.ImageLabel
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.ImageLabel
 G2L["1e5"] = Instance.new("ImageLabel", G2L["1e1"]);
 G2L["1e5"]["BorderSizePixel"] = 0;
 G2L["1e5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -4270,7 +4270,7 @@ G2L["1e5"]["BackgroundTransparency"] = 1;
 G2L["1e5"]["Position"] = UDim2.new(0.00962, 0, 0.129, 0);
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.TextLabel
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.TextLabel
 G2L["1e6"] = Instance.new("TextLabel", G2L["1e1"]);
 G2L["1e6"]["BorderSizePixel"] = 0;
 G2L["1e6"]["TextSize"] = 20;
@@ -4285,7 +4285,7 @@ G2L["1e6"]["Text"] = [[Fling Things And People]];
 G2L["1e6"]["Position"] = UDim2.new(0.05556, 0, 0, 0);
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton
 G2L["1e7"] = Instance.new("TextButton", G2L["1da"]);
 G2L["1e7"]["BorderSizePixel"] = 0;
 G2L["1e7"]["TextSize"] = 14;
@@ -4299,24 +4299,24 @@ G2L["1e7"]["Name"] = [[GameButton]];
 G2L["1e7"]["Position"] = UDim2.new(0.00593, 0, 0.05339, 0);
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.ClientClickLogic
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.ClientClickLogic
 G2L["1e8"] = Instance.new("LocalScript", G2L["1e7"]);
 G2L["1e8"]["Name"] = [[ClientClickLogic]];
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.UICorner
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.UICorner
 G2L["1e9"] = Instance.new("UICorner", G2L["1e7"]);
 G2L["1e9"]["CornerRadius"] = UDim.new(0, 6);
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.UIStroke
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.UIStroke
 G2L["1ea"] = Instance.new("UIStroke", G2L["1e7"]);
 G2L["1ea"]["Transparency"] = 0.5;
 G2L["1ea"]["Color"] = Color3.fromRGB(98, 98, 98);
 G2L["1ea"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.ImageLabel
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.ImageLabel
 G2L["1eb"] = Instance.new("ImageLabel", G2L["1e7"]);
 G2L["1eb"]["BorderSizePixel"] = 0;
 G2L["1eb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -4327,7 +4327,7 @@ G2L["1eb"]["BackgroundTransparency"] = 1;
 G2L["1eb"]["Position"] = UDim2.new(0.00962, 0, 0.129, 0);
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.TextLabel
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.TextLabel
 G2L["1ec"] = Instance.new("TextLabel", G2L["1e7"]);
 G2L["1ec"]["BorderSizePixel"] = 0;
 G2L["1ec"]["TextSize"] = 20;
@@ -4342,7 +4342,7 @@ G2L["1ec"]["Text"] = [[Steal A Egg]];
 G2L["1ec"]["Position"] = UDim2.new(0.05556, 0, 0, 0);
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton
 G2L["1ed"] = Instance.new("TextButton", G2L["1da"]);
 G2L["1ed"]["BorderSizePixel"] = 0;
 G2L["1ed"]["TextSize"] = 14;
@@ -4356,24 +4356,24 @@ G2L["1ed"]["Name"] = [[GameButton]];
 G2L["1ed"]["Position"] = UDim2.new(0.00445, 0, 0.07813, 0);
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.ClientClickLogic
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.ClientClickLogic
 G2L["1ee"] = Instance.new("LocalScript", G2L["1ed"]);
 G2L["1ee"]["Name"] = [[ClientClickLogic]];
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.UICorner
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.UICorner
 G2L["1ef"] = Instance.new("UICorner", G2L["1ed"]);
 G2L["1ef"]["CornerRadius"] = UDim.new(0, 6);
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.UIStroke
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.UIStroke
 G2L["1f0"] = Instance.new("UIStroke", G2L["1ed"]);
 G2L["1f0"]["Transparency"] = 0.5;
 G2L["1f0"]["Color"] = Color3.fromRGB(98, 98, 98);
 G2L["1f0"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.ImageLabel
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.ImageLabel
 G2L["1f1"] = Instance.new("ImageLabel", G2L["1ed"]);
 G2L["1f1"]["BorderSizePixel"] = 0;
 G2L["1f1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -4384,7 +4384,7 @@ G2L["1f1"]["BackgroundTransparency"] = 1;
 G2L["1f1"]["Position"] = UDim2.new(0.00962, 0, 0.129, 0);
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.TextLabel
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.TextLabel
 G2L["1f2"] = Instance.new("TextLabel", G2L["1ed"]);
 G2L["1f2"]["BorderSizePixel"] = 0;
 G2L["1f2"]["TextSize"] = 20;
@@ -4399,7 +4399,7 @@ G2L["1f2"]["Text"] = [[Murder Mystery]];
 G2L["1f2"]["Position"] = UDim2.new(0.05556, 0, 0, 0);
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton
 G2L["1f3"] = Instance.new("TextButton", G2L["1da"]);
 G2L["1f3"]["BorderSizePixel"] = 0;
 G2L["1f3"]["TextSize"] = 14;
@@ -4413,24 +4413,24 @@ G2L["1f3"]["Name"] = [[GameButton]];
 G2L["1f3"]["Position"] = UDim2.new(0.00445, 0, 0.10286, 0);
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.ClientClickLogic
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.ClientClickLogic
 G2L["1f4"] = Instance.new("LocalScript", G2L["1f3"]);
 G2L["1f4"]["Name"] = [[ClientClickLogic]];
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.UICorner
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.UICorner
 G2L["1f5"] = Instance.new("UICorner", G2L["1f3"]);
 G2L["1f5"]["CornerRadius"] = UDim.new(0, 6);
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.UIStroke
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.UIStroke
 G2L["1f6"] = Instance.new("UIStroke", G2L["1f3"]);
 G2L["1f6"]["Transparency"] = 0.5;
 G2L["1f6"]["Color"] = Color3.fromRGB(98, 98, 98);
 G2L["1f6"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.ImageLabel
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.ImageLabel
 G2L["1f7"] = Instance.new("ImageLabel", G2L["1f3"]);
 G2L["1f7"]["BorderSizePixel"] = 0;
 G2L["1f7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
@@ -4441,7 +4441,7 @@ G2L["1f7"]["BackgroundTransparency"] = 1;
 G2L["1f7"]["Position"] = UDim2.new(0.00962, 0, 0.129, 0);
 
 
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.TextLabel
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.TextLabel
 G2L["1f8"] = Instance.new("TextLabel", G2L["1f3"]);
 G2L["1f8"]["BorderSizePixel"] = 0;
 G2L["1f8"]["TextSize"] = 20;
@@ -7909,7 +7909,7 @@ local script = G2L["1c1"];
 	end)
 end;
 task.spawn(C_1c1);
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.ClientClickLogic
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.ClientClickLogic
 local function C_1dc()
 local script = G2L["1dc"];
 	local button = script.Parent
@@ -7925,7 +7925,7 @@ local script = G2L["1dc"];
 	
 end;
 task.spawn(C_1dc);
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.ClientClickLogic
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.ClientClickLogic
 local function C_1e2()
 local script = G2L["1e2"];
 	local button = script.Parent
@@ -7941,7 +7941,7 @@ local script = G2L["1e2"];
 	
 end;
 task.spawn(C_1e2);
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.ClientClickLogic
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.ClientClickLogic
 local function C_1e8()
 local script = G2L["1e8"];
 	local button = script.Parent
@@ -7957,7 +7957,7 @@ local script = G2L["1e8"];
 	
 end;
 task.spawn(C_1e8);
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.ClientClickLogic
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.ClientClickLogic
 local function C_1ee()
 local script = G2L["1ee"];
 	local button = script.Parent
@@ -7973,7 +7973,7 @@ local script = G2L["1ee"];
 	
 end;
 task.spawn(C_1ee);
--- StarterGui.ScreenGui.Main.Player.ScrollingFrame.GameButton.ClientClickLogic
+-- StarterGui.ScreenGui.Main.Games.ScrollingFrame.GameButton.ClientClickLogic
 local function C_1f4()
 local script = G2L["1f4"];
 	local button = script.Parent
