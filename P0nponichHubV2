@@ -7574,8 +7574,8 @@ local script = G2L["1bc"];
 		mesh.Scale = Vector3.new(1, 1, 1)
 		mesh.Parent = handle
 	
-		-- нимб парит НАД головой
-		handle.CFrame = head.CFrame * CFrame.new(0, 1.8, 0)
+		-- нимб парит НАД головой, развёрнут горизонтально (плашмя)
+		handle.CFrame = head.CFrame * CFrame.new(0, 1.8, 0) * CFrame.Angles(math.rad(90), 0, 0)
 		handle.Parent = character
 	
 		local weld = Instance.new("WeldConstraint")
